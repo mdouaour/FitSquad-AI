@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "dashboard": "Dashboard",
+    "tracks": "Tracks",
+    "leaderboard": "Leaderboard",
+    "coach": "AI Coach",
+    "profile": "Profile"
+  },
+  "dashboard": {
+    "title": "Daily Dashboard",
+    "greeting": "Ready to crush it",
+    "streak": "Day Streak",
+    "xp": "XP",
+    "level": "Level",
+    "logWorkout": "Log Workout",
+    "todayMission": "Today's Mission",
+    "noMission": "Talk to your AI Coach to get today's mission!"
+  },
+  "tracks": {
+    "title": "Training Tracks",
+    "subtitle": "Choose your path to greatness",
+    "locked": "Locked",
+    "unlockAt": "Unlock at Level",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "start": "Start Track",
+    "xpReward": "XP Reward"
+  },
+  "leaderboard": {
+    "title": "Squad Leaderboard",
+    "rank": "Rank",
+    "player": "Player",
+    "level": "Level",
+    "xp": "XP",
+    "streak": "Streak",
+    "workouts": "Workouts"
+  },
+  "coach": {
+    "title": "AI Coach",
+    "subtitle": "Your personal bilingual fitness coach",
+    "placeholder": "Ask your coach anything...",
+    "send": "Send",
+    "thinking": "Coach is thinking...",
+    "welcome": "Hey! I'm your FitSquad AI Coach. I'm here to push you, motivate you, and hold you accountable. What's your goal today? 💪"
+  },
+  "auth": {
+    "login": "Login",
+    "signup": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "username": "Username",
+    "fullName": "Full Name",
+    "loginTitle": "Welcome Back",
+    "signupTitle": "Join FitSquad AI",
+    "loginSubtitle": "Your squad is waiting",
+    "signupSubtitle": "Start your fitness journey",
+    "switchToSignup": "Don't have an account? Sign up",
+    "switchToLogin": "Already have an account? Login",
+    "submitting": "Loading..."
+  }
+}
