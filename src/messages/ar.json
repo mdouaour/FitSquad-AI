@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "tracks": "المسارات",
+    "leaderboard": "المتصدرون",
+    "coach": "المدرب الذكي",
+    "profile": "الملف الشخصي"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم اليومية",
+    "greeting": "مستعد للتحدي",
+    "streak": "أيام متتالية",
+    "xp": "نقاط خبرة",
+    "level": "المستوى",
+    "logWorkout": "تسجيل تمرين",
+    "todayMission": "مهمة اليوم",
+    "noMission": "تحدث مع مدربك الذكي للحصول على مهمة اليوم!"
+  },
+  "tracks": {
+    "title": "مسارات التدريب",
+    "subtitle": "اختر طريقك نحو العظمة",
+    "locked": "مقفل",
+    "unlockAt": "افتح في المستوى",
+    "beginner": "مبتدئ",
+    "intermediate": "متوسط",
+    "advanced": "متقدم",
+    "start": "ابدأ المسار",
+    "xpReward": "مكافأة الخبرة"
+  },
+  "leaderboard": {
+    "title": "لوحة المتصدرين",
+    "rank": "الترتيب",
+    "player": "اللاعب",
+    "level": "المستوى",
+    "xp": "الخبرة",
+    "streak": "السلسلة",
+    "workouts": "التمارين"
+  },
+  "coach": {
+    "title": "المدرب الذكي",
+    "subtitle": "مدربك الشخصي ثنائي اللغة",
+    "placeholder": "اسأل مدربك أي شيء...",
+    "send": "إرسال",
+    "thinking": "المدرب يفكر...",
+    "welcome": "مرحباً! أنا مدربك في FitSquad AI. أنا هنا لأدفعك وأحفزك وأحاسبك. ما هو هدفك اليوم؟ 💪"
+  },
+  "auth": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "username": "اسم المستخدم",
+    "fullName": "الاسم الكامل",
+    "loginTitle": "مرحباً بعودتك",
+    "signupTitle": "انضم إلى FitSquad AI",
+    "loginSubtitle": "فريقك ينتظرك",
+    "signupSubtitle": "ابدأ رحلتك الرياضية",
+    "switchToSignup": "ليس لديك حساب؟ سجل الآن",
+    "switchToLogin": "لديك حساب بالفعل؟ تسجيل الدخول",
+    "submitting": "جار التحميل..."
+  }
+}
