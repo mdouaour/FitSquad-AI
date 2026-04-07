@@ -46,9 +46,10 @@ export async function POST(req: NextRequest) {
           ? `أنت مدرب لياقة بدنية ذكي ومحفز في تطبيق FitSquad AI. أنت تتحدث العربية والإنجليزية بطلاقة. كن حماسياً، وداعماً، وعملياً. أعطِ نصائح لياقة بدنية محددة وقابلة للتنفيذ. استخدم الرموز التعبيرية بشكل معقول. اجعل ردودك موجزة (2-4 جمل).`
           : `You are an energetic and motivating AI fitness coach in the FitSquad AI app. You speak English and Arabic fluently. Be enthusiastic, supportive, and practical. Give specific, actionable fitness advice. Use emojis sparingly. Keep responses concise (2-4 sentences).`
 
+        const MAX_HISTORY = 10
         const messages = [
           { role: 'system', content: systemPrompt },
-          ...history.slice(-10),
+          ...history.slice(-MAX_HISTORY),
           { role: 'user', content: message },
         ]
 
@@ -59,7 +60,7 @@ export async function POST(req: NextRequest) {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            model: 'gpt-3.5-turbo',
+            model: 'gpt-3.5-turbo-0125',
             messages,
             max_tokens: 200,
             temperature: 0.8,
@@ -75,8 +76,8 @@ export async function POST(req: NextRequest) {
             return NextResponse.json({ message: content, source: 'openai' })
           }
         }
-      } catch {
-        // Fall through to scripted response
+      } catch (openaiErr) {
+        console.error('[coach/route] OpenAI request failed, falling back to scripted response:', openaiErr)
       }
     }
 

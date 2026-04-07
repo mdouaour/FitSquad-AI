@@ -14,6 +14,8 @@ interface Message {
 const WELCOME_EN = "Hey! I'm your FitSquad AI Coach. I'm here to push you, motivate you, and hold you accountable. What's your goal today? 💪"
 const WELCOME_AR = "مرحباً! أنا مدربك في FitSquad AI. أنا هنا لأدفعك وأحفزك وأحاسبك. ما هو هدفك اليوم؟ 💪"
 
+const MAX_CHAT_HISTORY = 10
+
 export default function ChatInterface() {
   const [language, setLanguage] = useState<'en' | 'ar'>('en')
   const [messages, setMessages] = useState<Message[]>([
@@ -44,7 +46,7 @@ export default function ChatInterface() {
       timestamp: new Date(),
     }
 
-    const history = messages.slice(-10).map(m => ({ role: m.role, content: m.content }))
+    const history = messages.slice(-MAX_CHAT_HISTORY).map(m => ({ role: m.role, content: m.content }))
 
     setMessages(prev => [...prev, userMessage])
     setInput('')
