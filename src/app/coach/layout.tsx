@@ -1,6 +1,6 @@
 import Navbar from '@/components/layout/Navbar'
 
-export default function DashboardLayout({
+export default function CoachLayout({
   children,
 }: {
   children: React.ReactNode
