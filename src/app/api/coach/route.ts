@@ -85,7 +85,8 @@ export async function POST(req: NextRequest) {
     const response = getScriptedResponse(message, language)
     return NextResponse.json({ message: response, source: 'scripted' })
 
-  } catch {
+  } catch (err) {
+    console.error('[coach/route] Unhandled error:', err)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
 }
