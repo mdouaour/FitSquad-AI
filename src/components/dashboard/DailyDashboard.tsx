@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Plus, Target, Zap, Trophy, MessageCircle } from 'lucide-react'
+import { Plus, Target, Zap, Trophy, MessageCircle, Users } from 'lucide-react'
 import XPProgress from './XPProgress'
 import StreakDisplay from './StreakDisplay'
 import Card from '@/components/ui/Card'
@@ -123,6 +123,15 @@ export default function DailyDashboard() {
             <div>
               <div className="font-semibold text-white text-sm group-hover:text-[#FF6B35] transition-colors">Tracks</div>
               <div className="text-xs text-gray-500">6 available</div>
+            </div>
+          </div>
+        </Link>
+        <Link href="/squads" className="card p-4 hover:border-[#FF6B35]/50 transition-colors group">
+          <div className="flex items-center gap-3">
+            <Users className="w-6 h-6 text-[#7B2FBE]" />
+            <div>
+              <div className="font-semibold text-white text-sm group-hover:text-[#FF6B35] transition-colors">My Squad</div>
+              <div className="text-xs text-gray-500">Desert Warriors</div>
             </div>
           </div>
         </Link>

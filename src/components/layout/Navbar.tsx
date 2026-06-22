@@ -2,12 +2,13 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, Map, Trophy, Bot, Zap } from 'lucide-react'
+import { LayoutDashboard, Map, Users, Trophy, Bot, Zap } from 'lucide-react'
 import clsx from 'clsx'
 
 const navItems = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/tracks', label: 'Tracks', icon: Map },
+  { href: '/squads', label: 'Squads', icon: Users },
   { href: '/leaderboard', label: 'Leaderboard', icon: Trophy },
   { href: '/coach', label: 'AI Coach', icon: Bot },
 ]
