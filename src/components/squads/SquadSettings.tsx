@@ -18,7 +18,6 @@ export default function SquadSettings({ squad, members, onUpdate, onLeave }: Squ
   const [description, setDescription] = useState(squad.description || '')
   const [isDirty, setIsDirty] = useState(false)
 
-  const isAdmin = squad.created_by === members.find(m => m.role === 'admin')?.user_id
   const adminMembers = members.filter(m => m.role === 'admin')
 
   const handleSave = () => {

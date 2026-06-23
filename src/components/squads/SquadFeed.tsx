@@ -67,11 +67,11 @@ export default function SquadFeed({ items, currentUserId, onReact }: SquadFeedPr
 
   return (
     <div className="space-y-3">
-      {items.map((item, idx) => {
+      {items.map((item) => {
         const isCurrentUser = item.user_id === currentUserId
 
         return (
-          <Card key={`${item.user_id}-${idx}`} className="p-4">
+          <Card key={item.user_id} className="p-4">
             <div className="flex items-center gap-3">
               <div
                 className={clsx(
@@ -119,7 +119,7 @@ export default function SquadFeed({ items, currentUserId, onReact }: SquadFeedPr
                 return (
                   <button
                     key={key}
-                    onClick={() => onReact(`${item.user_id}-${idx}`, key)}
+                    onClick={() => onReact(item.user_id, key)}
                     className={clsx(
                       'flex items-center gap-1 px-2.5 py-1 rounded-lg text-sm transition-all duration-200',
                       userReacted

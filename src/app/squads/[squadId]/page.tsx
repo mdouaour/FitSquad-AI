@@ -95,8 +95,7 @@ export default function SquadHomePage() {
   function handleReact(logId: string, reaction: string) {
     setFeedItems((prev) =>
       prev.map((item) => {
-        const key = `${item.user_id}-${prev.indexOf(item)}`
-        if (key !== logId) return item
+        if (item.user_id !== logId) return item
         return {
           ...item,
           reactions: item.reactions.map((r) =>

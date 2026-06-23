@@ -29,7 +29,7 @@ export default function SeasonHeader({ season, weekNumber, dayNumber, daysPerWee
       </p>
       <div className="w-full bg-[#0A0A0F] rounded-full h-2.5">
         <div
-          className={clsx('h-full rounded-full transition-all duration-500', progress >= 100 ? 'bg-[#00D68F]' : 'bg-[#00D68F]')}
+          className={clsx('h-full rounded-full transition-all duration-500', progress >= 100 ? 'bg-[#00D68F]' : 'bg-gradient-to-r from-[#FF6B35] to-[#00D68F]')}
           style={{ width: `${progress}%` }}
         />
       </div>
